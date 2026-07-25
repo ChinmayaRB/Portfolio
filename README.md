@@ -92,6 +92,7 @@ Specialized in Java development, enterprise spring architectures, database optim
   - **Cybersecurity Analyst Intern** @ TCS (Vulnerability remediation, network encryption protocols)
 - 🏆 **Key Certifications**:
   - Oracle Java Foundations
+  - Microsoft Azure AI Essentials Professional Certificate (Credential ID: `39d86cc8309697ab16a8d68cf25b0fd1373c8ab96e1f9715890094353e62f672`)
   - Infosys Springboard Full Stack & Software Engineering Badge
   - TCS Cybersecurity Threat Analysis Badge
   - NPTEL AI: Concepts Certification
