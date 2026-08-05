@@ -21,7 +21,7 @@ The application is built using a luxury design system with modern glassmorphism,
 
 - **Frontend**: Semantic HTML5, Vanilla CSS3 (Custom Variables, Flexbox/Grid layouts), Vanilla JavaScript (DOM Manipulation, ScrollReveal, Custom Animations).
 - **Backend/Server**: Node.js `http` module server routing (zero external runtime dependencies).
-- **Deployment & Cloud**: Pre-configured for serverless functions on [Vercel](https://vercel.com) using standard JSON routing rules.
+- **Deployment & Cloud**: Pre-configured for high-performance static hosting on [Vercel](https://vercel.com) Edge CDN with SPA rewrite rules.
 
 ---
 
@@ -29,16 +29,16 @@ The application is built using a luxury design system with modern glassmorphism,
 
 ```text
 ├── index.html         # Main portfolio markup, embedded luxury CSS, & interactive JS
-├── server.js          # Lightweight Node.js server serving files & assets
+├── server.js          # Lightweight Node.js server serving files & assets locally
 ├── package.json       # App metadata and starting script configurations
-├── vercel.json        # Routing overrides for seamless Vercel deployment
-└── headshot.jpg       # Professional profile image
+├── vercel.json        # Static CDN rewrites for seamless Vercel edge deployment
+├── headshot.jpg       # Professional profile image
 ```
 
 - **[index.html](file:///d:/Myy%20Portfolio/index.html)**: Houses the entire HTML structure, the responsive CSS variables, layout stylesheets, and all client-side logic (dynamic modals, scroll tracking, theme toggle, and page tilt effects).
 - **[server.js](file:///d:/Myy%20Portfolio/server.js)**: Configures the HTTP server, handles routing for image assets, and serves the index markup. Runs default on port `8000`.
 - **[package.json](file:///d:/Myy%20Portfolio/package.json)**: Identifies `node server.js` as the startup command under standard npm lifecycle commands.
-- **[vercel.json](file:///d:/Myy%20Portfolio/vercel.json)**: Configures route redirection patterns to route all incoming HTTP requests straight to `server.js` for serverless function compilation on the Vercel edge network.
+- **[vercel.json](file:///d:/Myy%20Portfolio/vercel.json)**: Configures route rewrite rules so all static files and client-side subroutes map correctly on Vercel's global CDN.
 
 ---
 

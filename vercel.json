@@ -1,9 +1,9 @@
 {
-  "version": 2,
-  "routes": [
+  "cleanUrls": true,
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/server.js"
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
     }
   ]
 }
