@@ -33,8 +33,11 @@ const requestHandler = (req, res) => {
     let relativePath = reqUrl === '/' ? 'index.html' : reqUrl.replace(/^\/+/, '');
     let filePath = path.join(__dirname, relativePath);
 
-    // Prevent directory traversal attacks
-    if (!filePath.startsWith(__dirname)) {
+    // Prevent directory traversal attacks (case-insensitive for Windows compatibility)
+    const normalizedBase = path.resolve(__dirname).toLowerCase();
+    const normalizedFile = path.resolve(filePath).toLowerCase();
+
+    if (!normalizedFile.startsWith(normalizedBase)) {
         res.writeHead(403, { 'Content-Type': 'text/plain' });
         res.end('403 Forbidden');
         return;
